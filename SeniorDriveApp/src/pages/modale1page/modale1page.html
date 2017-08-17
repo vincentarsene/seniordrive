@@ -1,0 +1,47 @@
+<!--
+  Generated template for the Modale1pagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title><div style="text-align:center;">SeniorDrive Detail Deplacement</div></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+    <ion-card-content>
+      <ion-card-title>
+		<h1>SeniorDrive Identifiant: {{deplacement.id}}</h1>
+		<p>Date: {{deplacement.depldate}}</p>
+		<p>Heure de Debut: {{deplacement.deplheuredebut}}</p>
+	  </ion-card-title>
+    <p>----------------------------------------------</p>
+    <p>Heure de Debut: {{deplacement.deplheuredebut}}</p>
+    <p>Heure de fin: {{deplacement.deplheurefin}}</p>
+		<p>Lieu de depart: {{deplacement.depllieudepart}}</p>
+		<p>Lieu de destination: {{deplacement.depllieudestination}}</p>
+	  <p>Nom du demandeur: {{deplacement.nom}}
+    <p>Prenom du demandeur: {{deplacement.prenom}}</p>
+		<p>Numéro de téléphone: {{deplacement.telephone}}</p>
+		<p>Adresse email : {{deplacement.email}}</p>
+		</ion-card-content>
+</ion-card>
+
+<ion-row responsive-sm>
+			<ion-col>
+				<button ion-button (click)="modalemail(id)" type="submit" block><ion-icon name="mail" item-left></ion-icon> - Email</button>
+			</ion-col>
+			<ion-col>
+        <button ion-button (click)="modalhide()" color="light" block><ion-icon name="close-circle" item-left></ion-icon> - Retour</button>
+			</ion-col>
+</ion-row>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title><div style="text-align:center;">Application Collaborative</div></ion-title>
+  </ion-toolbar>
+</ion-footer>

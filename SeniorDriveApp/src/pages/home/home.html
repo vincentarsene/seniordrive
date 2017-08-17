@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <div style="text-align:center;">SenioDrive - Liste Deplacements</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content overflow-scroll="false" class="seniordrivebg">
+  <ion-list>
+    <ion-item *ngFor="let deplacement of deplacements" (click)="modalshow(deplacement.id)">
+    SeniorDrive Identifiant: {{deplacement.id}} <br>
+    Date: {{deplacement.depldate}} <br>
+		Heure de Debut: {{deplacement.deplheuredebut}} <br>
+    Heure de fin: {{deplacement.deplheurefin}} <br>
+		Lieu de depart: {{deplacement.depllieudepart}} <br>
+		Lieu de destination: {{deplacement.depllieudestination}} <br>
+	  </ion-item>
+  </ion-list>
+ </ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title><div style="text-align:center;">Application Collaborative</div></ion-title>
+  </ion-toolbar>
+</ion-footer>
